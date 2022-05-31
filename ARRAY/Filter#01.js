@@ -15,3 +15,12 @@
             }).filter(function(f){
                 return f.fragil
             }))
+
+
+            // criar função para fazer o filter()
+                function filtrar(value){
+                    return value>=10
+                }
+                    let filtrando = [1,3,5,6,8,10,34,12,23,100,2]
+                        
+                            console.log(filtrando.filter(filtrar))
