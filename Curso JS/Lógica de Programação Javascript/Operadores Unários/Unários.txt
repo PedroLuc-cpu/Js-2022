@@ -1,0 +1,5 @@
+Operadores unários são operadores aritméticos que desempenham uma ação em um único operando.
+A linguagem de script reconhece o negativo do operador unário (-).
+
+! é unário
+- é unário

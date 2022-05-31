@@ -1,0 +1,14 @@
+
+// operador Post Fix 
+// d++ 
+    // fica depois do operando
+
+
+    // ++d 
+        // Pré Fix
+            // fica antes do operando
+
+
+            // inFix 
+                    // quando o operando ficar no meio 
+                        // operando + operando  

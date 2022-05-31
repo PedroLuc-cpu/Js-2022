@@ -1,0 +1,21 @@
+
+São usados para realizar operações lógicas.
+ Elas podem ser do tipo AND, OR e NOT. Os operandos devem ser lógicos, verdadeiro ou falso.
+  Também podem operar sobre expressões lógicas, ou seja, que retornem valores verdadeiro ou falso.
+        
+        exemplo:
+                ! é NEGAÇÃO                /// V ! V = F       ///     V ! F = F       ///     F ! F = F 
+
+                && é CONJUNÇÃO = E        /// V && V = V      ///      V && F = F     /// F && F = F
+                
+                || é DISFUNÇÃO = OU      /// V || V = V     /// V || F = V          /// F || F = F
+
+
+                ^ é  DISFUNÇÃO ESPECIAL (os operandos sempre devem ser diferente se for igual é false)
+                        V ^ F= true
+                        V ^ V = false
+                        F ^ F = false
+                        F ^ V = true
+
+                        Na Prática: 
+                                const compraTV32 = !!(trabalho1 ^ trabalho2)    // bitwise xor

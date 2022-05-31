@@ -1,0 +1,95 @@
+A sintaxe do try catch é composta por dois blocos principais:
+
+ O try onde o código é executado e o catch, 
+ onde você recebe via parâmetro na função, um objeto do tipo Error. 
+ Com este objeto você pode aplicar o tratamento que for adequado. Veja o exemplo. Você também pode estender o try catch usando a cláusula finally.
+
+
+
+ throw
+
+A declaração throw lança uma exceção definida pelo usuário. A execução da função atual vai parar (as instruções após o throw não serão executadas), e o controle será passado para o primeiro bloco catch na pilha de chamadas. Se nenhum bloco catch existe entre as funções "chamadoras", o programa vai terminar.
+
+Sintaxe
+
+    throw expressão; 
+
+    ////////////////////////////////////////////////
+
+        expressão 
+
+A expressão a ser lançada.
+
+   ////////////////////////////////////////////////
+        Descrição
+
+Use a instrução throw para lançar uma exceção.
+Quando você lança uma exceção, expressão especifica o valor da exceção.
+Cada uma das intruções a seguir lança uma exceção:
+
+throw "Erro2"; // gera uma exceção com um valor string
+throw 42;      // gera uma exceção com o valor 42
+throw true;    // gera uma exceção com o valor true
+
+    ////////////////////////////////////////////////
+
+                    try...catch
+                    //////////
+
+    As declarações try...catch  marcam um bloco de declarações e especificações para testar ( try , caso uma exceção seja lançada.
+
+                Sintaxe
+try {
+   try_statements
+}
+[catch (exception_var_1 if condition_1) {
+   catch_statements_1
+}]
+...
+[catch (exception_var_2) {
+   catch_statements_2
+}]
+[finally {
+   finally_statements
+}]
+
+//////////////////////////////////////////////////////////////////
+
+try_statements
+Declarações a serem realizadas.
+catch_statements_1,catch_statements_2
+Declarações que são relevantes se uma exceção é lançada no bloco try.
+exception_var_1,exception_var_2
+Um identificador que leva um objeto exceção para uma cláusula  catch  associada.
+condition_1
+Uma expressão condicional.
+finally_statements
+Declarações que são depois posteriores que a declaração  try é completa. Essas declarações são apresentadas como independete se uma exceção foi ou não lançada ou não.
+
+////////////////////////////////////////////////////////////////////////
+                Descrição
+
+A declaração  try consiste em um bloco  try, que contém uma ou mais declarações, e ao menos uma cláusula  catch  ou uma cláusula  finally,
+ ou ambas. Ou, há 3 formas de declarações seja  try :
+
+try...catch
+try...finally
+try...catch...finally
+Uma cláusula  catch contém declarações que especificam o que fazer caso uma exceção lançada no bloco try.
+ Ou seja, se você quer que o bloco try tenha sucesso, e caso não tenha, você quer que o controle passe para o bloco  catch.
+  Caso qualquer declaração do bloco  try  (ou em uma função chamada no interior do bloco try) lançará uma exceção ou controle dentro imediatamente muda para uma cláusula catch. Se nenhuma exceção for lançada no bloco try a cláusula catché ignorada.
+
+A cláusula  finally é alternativa do bloco  trye da(s) cláusula(s)  catch porém antes das declarações seguintes ao  try.
+ Ela semper é, independente se uma exceção para lançada ou capturada.
+
+Você pode aninhar uma ou mais declarações try.
+ Caso um tryinterior não tenha uma cláusula catch, uma cláusula de captura pertencente a uma declaração try que envolve a declaração é apresentada. 
+
+Você pode usar uma declaração para tentar excepcionalmente em JavaScript.
+ Veja o Guia Javascript  para informações excepcionais em JavaScript.
+
+/////////////////////////////////////////////////////////////////////////
+
+Cláusula pega incondicional
+Quando uma única, incondicional cláusula  catché utilizada, o bloco  catch  é inserido quando qualquer exceção para lançada.
+ Por exemplo, quando uma exceção ocorre no código a seguir, o controle é transferido para uma isenção catch.

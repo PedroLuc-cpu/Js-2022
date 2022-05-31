@@ -1,0 +1,81 @@
+body{
+    background: #1b1d2d;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.slide{
+    max-width: 380px;
+    margin: 20px auto;
+    display: grid;
+}
+
+.slide-items{
+    position: relative;
+    grid-area: 1/1;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px 2px rgba(0,0 , 0, 0.4);
+}
+
+.slide-nav{
+    grid-area: 1/1;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.slide-nav>button{
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0,0,0);
+    opacity: 0;
+}
+
+.slide-items > *{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+}
+
+.slide-items > .active{
+    position: relative;
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.slide-thumb{
+    display: flex;
+    grid-column: 1/3;
+}
+
+.slide-thumb>span{
+    flex: 1;
+    display: block;
+    height: 3px;
+    background: rgba(0,0,0,0.4);
+    margin: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.slide-thumb>span.active::after{
+    content: '';
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    height: inherit;
+    background: tomato;
+    transform: translateX(-100%);
+    border-radius: 3px;
+    animation:  thumb 5s forwards linear;
+}
+
+@keyframes thumb{
+    to{
+        transform: initial;
+    }
+}

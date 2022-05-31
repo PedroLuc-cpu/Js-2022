@@ -1,0 +1,21 @@
+O que é operador ternário JavaScript?
+
+O operador condicional (ternário) é o único operador JavaScript que possui três operandos.
+ Este operador é frequentemente usado como um atalho para a instrução if .
+
+
+        const resultado = nota => nota >= 7 ? 'aprovado' : 'reprovado'
+
+console.log(resultado(6))
+
+
+////////////////////////////////////////////////////////
+
+            condition ? expr1 : expr2 
+
+                        Parâmetros
+ condition
+Uma expressão que é avaliada como true ou false.
+
+ expr1, expr2
+Expressões com valores de qualquer tipo.

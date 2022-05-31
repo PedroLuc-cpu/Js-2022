@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+        function Hello(){
+            return <h1>Olá Mundo!</h1>
+        }
+        ReactDOM.render(<Hello />, document.getElementById('mydiv'))   
+         </script>
+
+         <script>
+             class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+class Model extends Car{
+    constructor(name, mod){
+        super(name)
+        this.model = mod
+    }
+
+    show(){
+        return this.present() + ", it is a" + this.model
+    }
+}
+const Carro = new Model(" Ford " , " Mustang ")
+const mycar = new Car("Ford");
+document.write(mycar.present())
+mycar.present();
+Carro.show()
+document.write(Carro.show())
+
+         </script>
+</body>
+</html>

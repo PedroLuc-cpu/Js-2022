@@ -1,0 +1,31 @@
+O JavaScript possui tanto operadores binários quanto unários e um operador ternário, o operador condicional.
+ Um operador binário exige dois operandos, um antes do operador e outro depois:
+
+operando1 operador operando2
+Por exemplo, 3+4 ou x*y.
+
+Um operador unário exige um único operando, seja antes ou depois do operador:
+
+operador operando
+ou
+
+operando operador
+Por exemplo, x++ ou ++x.
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Operador	Descrição	Exemplo
+==	Igual	(A == B) é false
+===	Igual (tanto o valor quanto o tipo de objeto)	(A === B) é false
+!=	Não igual	(A != B) é true
+>	Maior que	(A > B) é false
+<	Menor que	(A < B) é true
+>=	Maior ou igual que	(A >= B) é false
+<=	Menor ou igual que	(A <= B) é true
+
+
+
+=== é algo preciso, de maneira exata

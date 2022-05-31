@@ -1,0 +1,12 @@
+//////////😎
+
+O que é Destructuring em JavaScript?
+
+É uma expressão que permite extrair dados de um Array ou Object em variáveis distintas.
+
+//////////
+
+O que é destructuring? Destructuring é basicamente quebrar uma estrutura complexa em partes mais simples.
+Por estrutura complexa, na maioria das vezes podemos considerar como sendo um array ou um objeto.
+
+//////////😎
