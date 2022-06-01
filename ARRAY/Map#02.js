@@ -12,3 +12,19 @@ let carrinho = [
     console.log(resultado)
         
      
+// treino
+var numbers = [1, 4, 9];
+var roots = numbers.map(somar => somar * 3);
+   console.log(roots)
+
+
+   let procts = [{marca:"PS4", valor:120},
+                {marca:"PS5", valor: 500}]
+
+                  let transformandoDolar = procts.map(transformandoparaReal => transformandoparaReal.valor * Number(4.73)).filter(maisCaro =>  maisCaro >= 1000)
+                     console.log(transformandoDolar
+                     )
+               
+   
+                  
+              
