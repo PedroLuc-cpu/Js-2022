@@ -28,4 +28,4 @@ console.log(getPreco.apply(global,[0.20 , "$"]))
 
         // treino 
 
-          
+      
