@@ -58,3 +58,25 @@
 
                         const SegundoNome = new FirstName("Ester", "Santos")
                         console.log(SegundoNome.Citou("QUERO COMER"))
+
+
+
+
+
+                        class Ponto {
+                            constructor(x, y) {
+                                this.x = x;
+                                this.y = y;
+                            }
+                            static distancia(a,b){
+                                const dx = a.x - b.x
+                                const dy = b.y - b.y
+                                
+                                return Math.hypot(dx,dy)
+                            }
+
+                                
+                         }
+                            let p1 = new Ponto(6,6)
+                            let p2 = new Ponto(25,25)
+                              console.log(Ponto.distancia(p1 , p2))

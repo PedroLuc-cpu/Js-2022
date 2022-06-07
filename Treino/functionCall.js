@@ -98,4 +98,49 @@
                             let arrayMap = [2,4,6,8,10]
                               
                                   console.log(arrayMap.map((somar) => somar * 3).forEach((numbers, index) => console.log(`${index + 1}) ${numbers}`)))
+                
+
+                //Treinamento 03/06/2022
+                      // Obs: Posso usar super() ou super. em function
+                      
+                      class getName{
+                          constructor(name, lastname){
+                              this.name = name
+                              this.lastname = lastname
+                          }
+                          Jobs(){
+                              return `Trabaha de Programador ` 
+                          }
+                      }
+
+                        class PersonProcess extends getName{
+                            constructor(name, lastname){
+                                super(name , lastname)
+                            }
+                            DormeTrabalha(){
+                                return `${this.name} ${this.lastname} ${this.Jobs()}`
+                            }
+                        }
+                            let getingPerson = new PersonProcess("Pedro", "Lucas")
+                                console.log(getingPerson.DormeTrabalha())
+
+
+                                ///
+
+                                class retangulo{
+                                    constructor(altura, largura){
+                                        this.altura = altura ; this.largura = largura
+                                    }
+
+                                    // getter = obter
+                                        get Area(){
+                                                return this.calcularArea()
+                                            }
+                                            calcularArea(){
+                                                return this.altura * this.largura
+                                            }
+
+                                        }
+                                         const calculando = new retangulo(5,5)
+                                            console.log(calculando.calcularArea())   
                                 
